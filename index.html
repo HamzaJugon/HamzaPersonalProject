@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/feef8a8d33.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>About Hamza</title>
+    <title>About Hamza</title> <!-- Title of the page -->
 </head>
-<body>
- 
+
+<!-- HEADER -->
+
+<body> <!-- Header - same for every site, don't change CSS styling -->
     <header class="header">
-        <div class="logo-container"> <!-- Need to add my own Logo here-->
+        <div class="logo-container"> 
             <i class="fa-regular fa-user"></i>
             <h4 class="logo">Hamza Jugon</h4>
         </div>
@@ -31,17 +32,18 @@
         </nav>
     
         <!-- Adding clickable images that take you to the expedia/multiverse websites -->
-        <div class="company-logo">
+        <nav class="company-logo">
             <a href="https://www.expediagroup.com/home/default.aspx"><img src="./images/expedia logo.png" alt="Expedia Logo"/></a>
             <a href="https://www.multiverse.io/en-GB" ><img src="./images/multiverse-logo.png" alt="Multiverse Logo"/></a>
-        </div>
+        </nav>
     </header>
 
+ <!-- MAIN BODY-->
     <main>
         <section class="presentation">
             <div class="introduction">   
                 <div class="intro-text">
-                    <h1>A little about Hamza!!</h1>
+                    <h1>A little about Me!!</h1>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </p>
@@ -59,28 +61,27 @@
         </section>
     </main>
 
-    
 <!-- FOOTER -->
     
-    <div class="footer"> <!-- The start of the footer section of the page-->
-        <div class="column1">
+    <footer class="footer"> <!-- The start of the footer section of the page-->
+        <section class="column1">
             <h3>INTERNAL LINKS</h3>
             <a href="/bio.html">Bio</a>
             <a href="/experience.html">Experience</a>
             <a href="/projects.html">Projects</a>
             <a href="/hobbies.html">Hobbies</a>
-        </div>
-        <div class="column2">
+        </section>
+        <section class="column2">
             <h3>NEWSLETTER</h3>
             <form>
-            <!--    Line below is to create the input field, it has "email" so it only accepts the email data type.
-                    It also has the required section at the end to stop the user submitting an empty box -->
+<!--    Line below is to create the input field, it has "email" so it only accepts the email data type.
+It also has the required section at the end to stop the user submitting an empty box -->
                 <input type="email" placeholder="Enter your email to subscribe to my newsletter!" required>
                 <br> <!-- This <br> tag is to put a gap between the form and the subcribe buttom-->
                 <button type="submit"> SIGN ME UP!</button>
             </form>
-        </div>
-        <div class="column3">
+        </section>
+        <section class="column3">
             <h3>CONTACT</h3>
             <a class="email-link" href="mailto: hamza@jugon.com">hamza@jugon.com</a>
             <div class="social-media">
@@ -88,9 +89,9 @@
                 <a href="https://github.com/HamzaJugon" class="fa-brands fa-github"></a>
                 <a href="" class="fa-brands fa-twitter"></a>
                 <a href="https://www.instagram.com/hamza_jugon/" class="fa-brands fa-instagram"></a>
-                <a href="https://www.strava.com/athletes/17712387" class="fa-brands fa-strava"></a>
+                <a id="strava" href="https://www.strava.com/athletes/17712387" class="fa-brands fa-strava"></a>
             </div>
-        </div>
-    </div>
+        </section>
+    </footer>
 </body>
 </html>
