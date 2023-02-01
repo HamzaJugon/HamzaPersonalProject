@@ -1,0 +1,340 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+button{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER */
+
+
+header{
+    display: flex;
+    width: 90%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+    background-image: linear-gradient(black,white,);
+}
+
+.logo-container, 
+.nav-links, 
+.company-logo{
+    display: flex;
+}
+
+.logo-container{
+    flex: 1;
+}
+
+.logo-container i{  /* Selecting the i tag within logo-container to add some margin to line it up with my name */
+    margin-top: 10px;
+}
+
+.logo{
+    font-weight: 400;
+    margin: 7.5px;
+    font-size: 20px;
+}
+
+nav{
+    flex: 2;
+}
+
+.nav-links{
+    list-style: none;
+    justify-content: space-around;
+}
+
+.nav-link{
+    color: rgb(69, 69, 87);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.company-logo{
+    justify-content: flex-end;
+    flex: 1;
+}
+
+
+/* Main body of the website */
+
+.presentation{
+    display: flex;
+    width:80%;
+    margin:auto;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.introduction{
+    flex:1 ;
+}
+
+.intro-text h1 { /* Need to be able to explain this */
+    font-size: 44px;
+    font-weight: 500;
+    width: 85%;
+    background: linear-gradient(to right, #494964, #6f6f89);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro-text p{
+    margin-top: 5px;
+    font-size: 22px;
+    width: 85%;
+    color: #585772;
+}
+
+.button{
+    padding: 50px 0px 0px 0px;
+}
+
+.button1{
+    border: 2px solid #585358;
+    background: transparent;
+    color: #585358;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 1000px;
+}
+
+.button2{
+    background:transparent;
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    border:2px solid #585358;
+    color: #585358;
+    margin: 30px 0px 0px 30px;
+    border-radius: 1000px
+    
+}
+
+
+.portrait{
+    flex: 1;
+}
+
+
+/* what is VH*/
+.portrait img{
+    height: 60vh;
+    border-radius: 1500px;
+    filter: drop-shadow(0px 5px 5px black);
+}
+
+
+
+/* footer 
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    border-top: solid #000;
+  }
+  
+  .footer-btn {
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .footer-btn:hover {
+    background-color: #555;
+  }
+  */
+
+
+
+/* FOOTER*/
+
+.footer{
+    margin-top: 150px;
+    width: 100%;
+    padding: 75px 15%;
+    background-image: linear-gradient(white,black);
+    color: #efefef;
+    display: flex;
+}
+
+.footer div{
+    text-align: center;
+}
+
+.column2{
+    flex-grow: 2 /* This means the middle column takes double the space to add cloumn gap between them all*/
+}
+
+.footer div h3{  /* Editing the h3 tags within all the divs in the footer for better spacing and gaps */
+    font-weight: 300;
+    margin-bottom:  25px;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+
+.column1 a{ 
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+form input{ /* Adding styling to the box asking for email adresses */
+    width: 300px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;    
+    outline: none;
+    border: none;
+}
+
+form button{  /* Styling the subscribe now button */
+    background: transparent;
+    border: 2px solid #efefef;
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.email-link{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    background-color: rgb(176, 176, 179);
+}
+
+.social-media{ /* Adding a margin to the top of the soecial media icons to avoid crowding */
+    margin-top: 30px;
+}
+ 
+.social-media a{  /* Formatting the icons in the footer together as they all have a tags */
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* adjusting for mobile size */
+ 
+@media screen and (max-width:390px){
+
+    html,body{
+        overflow-x: hidden;
+    }
+
+    .presentation{
+        flex-direction: column;
+        text-indent: 20px;
+    }
+
+    .introduction{
+        margin-top:10px ;
+        margin-left: 20px;
+        
+        text-align: center;
+    }
+
+    .intro-text h1{
+        font-size: 30px;
+    }
+
+    .intro-text p{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+
+
+    .logo-container h4{ /* Resizing the font of my name */
+        font-size: 10px;
+    }
+
+    .logo-container i{  /* Aligning the profile image to my name */
+        margin-bottom: 10px;
+    }
+
+    .nav-links a{       /* resizing the size of the nav bar font to make it fit */
+        font-size: 10px;
+    }
+
+    .button1{
+        display: none;
+    }
+
+    .button2{
+        display: none;
+    }
+
+    .portrait{
+        margin-top: 0px;
+    }
+
+    .portrait img{      /* Resizing the size of my photo and adjusting the margin around it*/
+        max-width: 85% ;
+        height: auto!important;
+        margin-top: 10px;
+
+    }
+
+
+/* FOOTER FOR MOBILE*/
+
+    .footer{
+        margin-top: 0%;
+    }
+
+    .column1 a{ /* Resizing the font of text */
+        font-size: 10px;
+    }
+
+    .column1 h3{ /* Resizing the font of text */
+        font-size: 12px;
+    }
+
+    .column2{ /* removing column 2 for mobile version */
+        display: none;
+    }
+
+    .column3 h3{ /* Resizing the font of text */
+        font-size: 12px;
+    }
+
+    .column3 a{ /* Resizing the font of text */
+        font-size: 10px;
+    }
+
+}
+
+
+
+
+/* Hobbies page */
+
