@@ -14,7 +14,6 @@ button{
 
 /* HEADER */
 
-
 header{
     display: flex;
     width: 90%;
@@ -26,7 +25,7 @@ header{
 
 .logo-container, 
 .nav-links, 
-.company-logo{
+.company-logo{  /* Puts all of the links in the nav bar in line */
     display: flex;
 }
 
@@ -38,22 +37,22 @@ header{
     margin-top: 10px;
 }
 
-.logo{
+.logo{ /* Adjust the size of the logo section in the top left to fit */
     font-weight: 400;
     margin: 7.5px;
     font-size: 20px;
 }
 
-nav{
+nav{ /* Fixes the spacing between the nav links*/
     flex: 2;
 }
 
-.nav-links{
+.nav-links{ /* Removes the styling the comes with LI tags (bullet points) */
     list-style: none;
     justify-content: space-around;
 }
 
-.nav-link{
+.nav-link{ /* removes the colour of that comes with the link tag */
     color: rgb(69, 69, 87);
     font-size: 20px;
     text-decoration: none;
@@ -83,16 +82,18 @@ nav{
     font-size: 44px;
     font-weight: 500;
     width: 85%;
-    background: linear-gradient(to right, #494964, #6f6f89);
+    background: linear-gradient(to right, #494964, #848497);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.intro-text p{
+.intro-text p{ /* adjusts formatting - adds background gradient - sets transluscent text to show background */
     margin-top: 5px;
     font-size: 22px;
     width: 85%;
-    color: #585772;
+    background: linear-gradient(to right, #494964, #848497); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
 }
 
 .button{
@@ -197,7 +198,7 @@ form button{  /* Styling the subscribe now button */
     color: white;
 }
 
-a:hover{
+a:hover{ /* Adding colour to A tags when the mouse hovers over them */
     background-color: rgb(176, 176, 179);
 }
 
@@ -215,6 +216,7 @@ a:hover{
 
 
 /* Adjusting for mobile size */
+/* This mainly impacts the 'Home' page but also has some influence over the 'Bio' page */
  
 @media screen and (max-width:390px){
 
@@ -234,6 +236,7 @@ a:hover{
 
     .nav-links a{       /* resizing the size of the nav bar font to make it fit */
         font-size: 10px;
+        text-decoration: underline;
     }
 
     /* MAIN BODY */
@@ -275,7 +278,6 @@ a:hover{
         max-width: 85% ;
         height: auto!important;
         margin-top: 10px;
-
     }
 
 
@@ -309,5 +311,109 @@ a:hover{
 
 
 
-/* Hobbies page */
+/* BIO PAGE */
+
+.bio-presentation{
+    width:80%;
+    margin:auto;
+    min-height: 20vh;
+    align-items: center;
+}
+
+.bio-table{
+    margin: 10%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.bio-table th{
+    background: linear-gradient(to right, #2c2c3a, #848497);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+}
+
+.bio-table td{
+    font-size: 10px;
+}
+
+#profile-pic{
+    width:99%;
+}
+
+
+.bio-footer{ /* Footer copied from Home page and edited for the bio page - renamed to bio-footer */
+    margin-top: 50px;
+    width: 100%;
+    padding: 75px 15%;
+    background-image: linear-gradient(white,black);
+    color: #efefef;
+    display: flex;
+}
+
+.bio-footer section{
+    text-align: center;
+}
+
+.column2{
+    flex-grow: 2 /* This means the middle column takes double the space to add cloumn gap between them all*/
+}
+
+.bio-footer section h3{  /* Editing the h3 tags within all the divs in the footer for better spacing and gaps */
+    font-weight: 300;
+    margin-bottom:  25px;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+
+
+/* MEDIA QUERY FOR BIO PAGE*/
+
+@media screen and (min-width:900px){
+
+    .bio-presentation{
+        display: flex;
+        width:80%; 
+        min-height: 20vh;
+        align-items: center;
+    }
+    
+    .intro-text h1 { /* Need to be able to explain this */
+        font-size: 44px;
+        font-weight: 500;
+        width: 85%;
+        background: linear-gradient(to right, #494964, #848497);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .intro-text p{
+        margin-top: 5px;
+        font-size: 22px;
+        width: 85%;
+        background: linear-gradient(to right, #494964, #848497);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .bio-table{
+        flex: 1;
+        padding: 0;
+        margin: 15px;
+    }
+    
+    .bio-table th{
+        background: linear-gradient(to right, #2c2c3a, #848497);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;   
+    }
+
+    .bio-table td{
+        font-size: 15px;
+    }
+
+    .bio-footer{
+        margin-top: 50px;
+    }
+
+}
 
