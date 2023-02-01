@@ -4,9 +4,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hobbies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/feef8a8d33.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Hobbies</title> <!-- Title of the page -->
 </head>
-<body>
-    <p>HELLO</p>
+
+<!-- HEADER KEEP SAME ON ALL PAGES -->
+
+<body> <!-- Header - same for every site, don't change CSS styling -->
+    <header class="header">
+        <div class="logo-container"> 
+            <i class="fa-regular fa-user"></i>
+            <h4 class="logo">Hamza Jugon</h4>
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a class="nav-link" href="index.html">Home</a> </li>
+                <li><a class="nav-link" href="bio.html">Bio</a></li>
+                <li><a class="nav-link" href="experience.html">CV</a> </li>
+                <li><a class="nav-link" href="projects.html">Projects</a> </li>
+                <li><a class="nav-link" href="hobbies.html">Hobbies</a> </li>
+            </ul>
+        </nav>
+    
+        <!-- Adding clickable images that take you to the expedia/multiverse websites -->
+        <nav class="company-logo">
+            <a href="https://www.expediagroup.com/home/default.aspx"><img src="./images/expedia logo.png" alt="Expedia Logo"/></a>
+            <a href="https://www.multiverse.io/en-GB" ><img src="./images/multiverse-logo.png" alt="Multiverse Logo"/></a>
+        </nav>
+    </header>
+
+ <!-- MAIN BODY-->
+
+    <main>
+        <section class="bio-presentation">
+            <div class="introduction">   
+                <div class="intro-text">
+                    <h1>Hobbies</h1>
+                    <p>
+                        This would have been a portfolio page if I had any experience!
+                    </p>
+                </div>
+            </div>
+        <div class="square-container">
+                <div class="square-1"></div>
+                <div class="square-2"></div>
+                <div class="square-3"></div>
+        </div>
+
+
+
+        </section>
+    </main>
+   
+
+<!-- FOOTER -->
+    
+    <footer class="bio-footer"> <!-- The start of the footer section of the page-->
+        <section class="column1">
+            <h3>INTERNAL LINKS</h3>
+            <a href="/bio.html">Bio</a>
+            <a href="/experience.html">Experience</a>
+            <a href="/projects.html">Projects</a>
+            <a href="/hobbies.html">Hobbies</a>
+        </section>
+        <section class="column2">
+            <h3>NEWSLETTER</h3>
+            <form>
+<!--    Line below is to create the input field, it has "email" so it only accepts the email data type.
+It also has the required section at the end to stop the user submitting an empty box -->
+                <input type="email" placeholder="Enter your email to subscribe to my newsletter!" required>
+                <br> <!-- This <br> tag is to put a gap between the form and the subcribe buttom-->
+                <button type="submit"> SIGN ME UP!</button>
+            </form>
+        </section>
+        <section class="column3">
+            <h3>CONTACT</h3>
+            <a class="email-link" href="mailto: hamza@jugon.com">hamza@jugon.com</a>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/hamza-jugon-254707121/" class="fa-brands fa-linkedin-in"></a>
+                <a href="https://github.com/HamzaJugon" class="fa-brands fa-github"></a>
+                <a href="" class="fa-brands fa-twitter"></a>
+                <a href="https://www.instagram.com/hamza_jugon/" class="fa-brands fa-instagram"></a>
+                <a id="strava" href="https://www.strava.com/athletes/17712387" class="fa-brands fa-strava"></a>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
