@@ -1,3 +1,7 @@
+
+/*  Note: The sites have been designed for iphone 12 pro - I need to work on the media queries and change alot of things from px to % but haven't had the time */
+
+
 *{
     margin: 0px;
     padding:0px;
@@ -377,7 +381,7 @@ a:hover{ /* Adding colour to A tags when the mouse hovers over them */
         align-items: center;
     }
     
-    .intro-text h1 { /* Need to be able to explain this */
+    .intro-text h1 { /* Adding gradient to the intro text*/
         font-size: 44px;
         font-weight: 500;
         width: 85%;
@@ -419,22 +423,101 @@ a:hover{ /* Adding colour to A tags when the mouse hovers over them */
 
 /* HOBBIES PAGE */
 
-.square-1, .square-2, .square-3{
+.box-1, .box-2,.box-3,.box-4{ /* Shaping the hobbies boxes and adding shadow */
     width: 150px;
     height: 150px;
     background-repeat:no-repeat;
-    background-size: 150px 150px;
-    background-color: #2c2c3a;
-}
-
-.square-container{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 130px;
-    margin-top: 50px;
-}
-
-.square-1{
-    background-image:url("https://html.com/wp-content/uploads/very-large-flamingo.jpg") ;
     background-size: cover;
+    background-color: #2c2c3a;
+    border-radius: 4px;
+    box-shadow: 5px 5px #89898e;
+}
+
+.box-container{
+    display:flex;
+    justify-content:space-evenly;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.box-1{ /* Adding the images to the hobbies boxes */
+    background-image:url(images/Hjbike.JPG);
+    background-size: cover;
+}
+
+.box-2{
+    background-image:url(images/steak.JPG);
+    background-size: cover;
+}
+
+.box-3{
+    background-image:url(images/duck.JPG);
+    background-size: cover;
+}
+
+.box-4{
+    background-image:url(images/hjbike2.JPG);
+    background-size: cover;
+}
+
+.hobbies-footer{ /* Footer copied from Home page and edited for the hobbies page - renamed to hobbies-footer */
+    margin-top: 50px;
+    width: 100%;
+    padding: 75px 15%;
+    background-image: linear-gradient(white,black);
+    color: #efefef;
+    display: flex;
+}
+
+.hobbies-footer section{
+    text-align: center;
+}
+
+
+.hobbies-footer section h3{  /* Editing the h3 tags within all the divs in the footer for better spacing and gaps */
+    font-weight: 300;
+    margin-bottom:  25px;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+
+
+/* PROJECTS PAGE */
+
+
+.project-box-1, .project-box-2{ /* Shaping the project boxes and adding shadow */
+    width: 300px;
+    height: 200px;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: #2c2c3a;
+    border-radius: 4px;
+    box-shadow: 5px 5px #89898e;
+}
+
+.project-box-container{ /* Shaping the container with the proejct images inside them */
+    display:flex;
+    justify-content:space-evenly;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.project-box-1{ /* Adding the project images to the boxes */
+    background-image:url(images/Sneaker-site.jpg);
+    background-size: cover;
+}
+
+.project-box-2{ 
+    background-image:url(images/Travel-blog.jpg);
+    background-size: cover;
+}
+
+.project-title h4{ /* Adding formatting and space to the headers */
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+
+    background: linear-gradient(to right, #2c2c3a, #848497); /* Adding gradient to the colour of the headers */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
 }
